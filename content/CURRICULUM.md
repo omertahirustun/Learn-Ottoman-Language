@@ -8,30 +8,34 @@ içeriği") somutlaştırır: uygulamanın seviye/ders yapısını ve hangi ders
 
 ## Seviye 1 — Alfabe (Elifbâ)
 
-Amaç: Osmanlı alfabesindeki harfleri şekil ve isimle tanıma. Bu oturumda
-5 ders tam içerikle yazıldı (`content/lessons/`), kalan 3 ders planlandı
-ama henüz yazılmadı.
+Amaç: Osmanlı alfabesindeki harfleri şekil ve isimle tanıma. 33 harflik
+geleneksel elifbanın tamamı 9 derste, tam içerikle yazıldı.
 
-| # | Ders | Durum | Harfler | Odak |
-|---|------|-------|---------|------|
-| 1 | Alfabeye Giriş | ✅ Yazıldı (`lesson-001`) | elif, be, pe | Temel tanıma |
-| 2 | Bitişen Harfler I | ✅ Yazıldı (`lesson-002`) | te, se, cim, çim | Bitişen harf kavramı |
-| 3 | Bitişmeyen Harfler | ✅ Yazıldı (`lesson-003`) | dal, zel, re, ze, vav | Bağlanmama kuralı |
-| 4 | Islık Sesleri | ✅ Yazıldı (`lesson-004`) | sin, şin, sad, dad | Nokta sayısı ayrımı |
-| 5 | Karma Tekrar | ✅ Yazıldı (`lesson-005`) | Ders 1-4'ten seçmeler | Benzer şekilli harf ayrımı (be/pe/te/se, sin/şin, dal/zel) |
-| 6 | Kalın Sesler | ⏳ Backlog | ha, hı, tı, zı, ayn, gayn | — |
-| 7 | Son Harfler | ⏳ Backlog | fe, kaf, kef, gef, kef-i nunî | — |
-| 8 | Alfabe Tamamlama | ⏳ Backlog | lam, mim, nun, he, ye, je | Tüm alfabe tekrarı/değerlendirme |
+| # | Ders | Harfler | Odak |
+|---|------|---------|------|
+| 1 | Alfabeye Giriş | elif, be, pe | Temel tanıma |
+| 2 | Bitişen Harfler I | te, se, cim, çim | Bitişen harf kavramı |
+| 3 | Bitişmeyen Harfler | dal, zel, re, ze, vav | Bağlanmama kuralı |
+| 4 | Islık Sesleri | sin, şin, sad, dad | Nokta sayısı ayrımı |
+| 5 | Karma Tekrar | Ders 1-4'ten seçmeler | Benzer şekilli harf ayrımı (be/pe/te/se, sin/şin, dal/zel) |
+| 6 | Kalın Sesler | ha, hı, tı, zı, ayn, gayn | Arapça kökenli, Türkçede çoğunlukla "düz" karşılığıyla aynı okunan harfler |
+| 7 | Son Harfler I | fe, kaf, kef, gef, kef-i nunî | Kef ailesi ayrımı |
+| 8 | Son Harfler II | lam, mim, nun, he, ye, je | Alfabenin tamamlanması + je'nin bitişmeyen-harf kuralına bağlılığı |
+| 9 | Tam Alfabe Değerlendirmesi | Ders 6-7'den seçmeler | ha/hı, tı/zı, ayn/gayn, fe/kaf, kef/gef/kef-i nunî ayrımı |
 
-Ders 6-8'in harf şekilleri `content/letters/letters.ts`'e henüz eklenmedi —
-bir sonraki içerik oturumunda Ders 1-5'teki kalıp (bkz. `helpers.ts`)
-izlenerek eklenecek.
+Tüm dersler `content/lessons/`'da yazıldı, tüm harfler `content/letters/letters.ts`'de tanımlı.
 
-**Egzersiz kapsamı:** Ders 1-5'teki tüm egzersizler `multiple_choice`
-tipinde (harf şekli → isim, isim → harf şekli). Eşleştirme, harf yazma ve
-sesli eşleştirme egzersiz tipleri (`matching`, `letter_write`,
-`audio_match`) motor tarafında M5'te devreye girecek; o noktada Ders 1-8
-bu tiplerle zenginleştirilebilir.
+**Egzersiz kapsamı:** Ders 1-9'daki tüm egzersizler `multiple_choice`
+tipinde (harf şekli → isim, isim → harf şekli), `content/lessons/helpers.ts`
+yardımcılarıyla üretildi. Eşleştirme, harf yazma ve sesli eşleştirme
+egzersiz tipleri (`matching`, `letter_write`, `audio_match`) motor
+tarafında M5'te devreye girecek; o noktada Ders 1-9 bu tiplerle
+zenginleştirilebilir.
+
+**Not (telaffuz):** Ders 6 başlığındaki "Kalın Sesler" bir yazım/köken
+ayrımıdır — Osmanlı Türkçesi telaffuzunda bu harflerin çoğu "düz"
+karşılıklarıyla aynı okunur (ör. tı≈te, zı≈ze/dal). Egzersizler yalnızca
+şekil/isim eşleştirir, bir telaffuz farkı iddia etmez.
 
 ## Seviye 2 — Temel Kelimeler ve Basit Gramer
 

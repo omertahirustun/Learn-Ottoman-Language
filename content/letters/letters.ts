@@ -7,10 +7,9 @@
  * alanında uzman biri tarafından gözden geçirilmelidir — bkz. CLAUDE.md
  * "Önemli Kısıtlar" (içerik doğruluğu, otomatik/tahmini içerik üretilmemeli).
  *
- * Kapsam: Seviye 1 (Alfabe) müfredatının Ders 1-5'inde kullanılan 16 harf.
- * Kalan elifba harfleri (ha, hı, tı, zı, ayn, gayn, fe, kaf, kef, gef,
- * kef-i nunî, lam, mim, nun, he, ye, je) roadmap'te Ders 6-8 olarak
- * planlandı, henüz burada tanımlanmadı — bkz. content/CURRICULUM.md.
+ * Kapsam: Seviye 1 (Alfabe) müfredatının Ders 1-9'unda kullanılan 33 harf —
+ * geleneksel Osmanlı elifbasının tamamı (lam-elif bitişik harfi hariç).
+ * Ders bazlı gruplama için bkz. content/CURRICULUM.md.
  */
 export interface Letter {
   id: string;
@@ -192,6 +191,183 @@ export const letters: Letter[] = [
     medial: 'ـضـ',
     final: 'ـض',
     connectsToNext: true,
+  },
+  // Ders 6 — Kalın Sesler (Arapça kökenli sözcüklerde ayrı yazılan, Osmanlı
+  // Türkçesi telaffuzunda çoğunlukla "düz" karşılıklarıyla aynı okunan harfler)
+  {
+    id: 'ha',
+    nameTr: 'Ha',
+    nameEn: 'Ha',
+    isolated: 'ح',
+    initial: 'حـ',
+    medial: 'ـحـ',
+    final: 'ـح',
+    connectsToNext: true,
+  },
+  {
+    id: 'hi',
+    nameTr: 'Hı',
+    nameEn: 'Khı',
+    isolated: 'خ',
+    initial: 'خـ',
+    medial: 'ـخـ',
+    final: 'ـخ',
+    connectsToNext: true,
+  },
+  {
+    id: 'ti',
+    nameTr: 'Tı',
+    nameEn: 'Tı',
+    isolated: 'ط',
+    initial: 'طـ',
+    medial: 'ـطـ',
+    final: 'ـط',
+    connectsToNext: true,
+  },
+  {
+    id: 'zi',
+    nameTr: 'Zı',
+    nameEn: 'Zı',
+    isolated: 'ظ',
+    initial: 'ظـ',
+    medial: 'ـظـ',
+    final: 'ـظ',
+    connectsToNext: true,
+  },
+  {
+    id: 'ayn',
+    nameTr: 'Ayn',
+    nameEn: 'Ayn',
+    isolated: 'ع',
+    initial: 'عـ',
+    medial: 'ـعـ',
+    final: 'ـع',
+    connectsToNext: true,
+  },
+  {
+    id: 'gayn',
+    nameTr: 'Gayn',
+    nameEn: 'Ghayn',
+    isolated: 'غ',
+    initial: 'غـ',
+    medial: 'ـغـ',
+    final: 'ـغ',
+    connectsToNext: true,
+  },
+  // Ders 7 — Son Harfler I
+  {
+    id: 'fe',
+    nameTr: 'Fe',
+    nameEn: 'Fe',
+    isolated: 'ف',
+    initial: 'فـ',
+    medial: 'ـفـ',
+    final: 'ـف',
+    connectsToNext: true,
+  },
+  {
+    id: 'kaf',
+    nameTr: 'Kaf',
+    nameEn: 'Qaf',
+    isolated: 'ق',
+    initial: 'قـ',
+    medial: 'ـقـ',
+    final: 'ـق',
+    connectsToNext: true,
+  },
+  {
+    id: 'kef',
+    nameTr: 'Kef',
+    nameEn: 'Kef',
+    isolated: 'ك',
+    initial: 'كـ',
+    medial: 'ـكـ',
+    final: 'ـك',
+    connectsToNext: true,
+  },
+  {
+    id: 'gef',
+    nameTr: 'Gef',
+    nameEn: 'Gef',
+    isolated: 'گ',
+    initial: 'گـ',
+    medial: 'ـگـ',
+    final: 'ـگ',
+    connectsToNext: true,
+  },
+  {
+    id: 'kef-i-nuni',
+    nameTr: 'Kef-i Nunî',
+    nameEn: 'Sağır Kef',
+    isolated: 'ڭ',
+    initial: 'ڭـ',
+    medial: 'ـڭـ',
+    final: 'ـڭ',
+    connectsToNext: true,
+  },
+  // Ders 8 — Son Harfler II (alfabenin tamamlanması)
+  {
+    id: 'lam',
+    nameTr: 'Lam',
+    nameEn: 'Lam',
+    isolated: 'ل',
+    initial: 'لـ',
+    medial: 'ـلـ',
+    final: 'ـل',
+    connectsToNext: true,
+  },
+  {
+    id: 'mim',
+    nameTr: 'Mim',
+    nameEn: 'Mim',
+    isolated: 'م',
+    initial: 'مـ',
+    medial: 'ـمـ',
+    final: 'ـم',
+    connectsToNext: true,
+  },
+  {
+    id: 'nun',
+    nameTr: 'Nun',
+    nameEn: 'Nun',
+    isolated: 'ن',
+    initial: 'نـ',
+    medial: 'ـنـ',
+    final: 'ـن',
+    connectsToNext: true,
+  },
+  {
+    id: 'he',
+    nameTr: 'He',
+    nameEn: 'He',
+    isolated: 'ه',
+    initial: 'هـ',
+    medial: 'ـهـ',
+    final: 'ـه',
+    connectsToNext: true,
+  },
+  {
+    id: 'ye',
+    nameTr: 'Ye',
+    nameEn: 'Ye',
+    isolated: 'ي',
+    initial: 'يـ',
+    medial: 'ـيـ',
+    final: 'ـي',
+    connectsToNext: true,
+  },
+  {
+    id: 'je',
+    nameTr: 'Je',
+    nameEn: 'Zhe',
+    isolated: 'ژ',
+    // ze (ز) ile aynı gövdeyi paylaşır, dolayısıyla o da bir sonraki harfe
+    // bağlanmaz — Ders 3'teki "bitişmeyen harfler" kuralının bir istisna
+    // değil, aynı ailenin bir üyesi.
+    initial: 'ژ',
+    medial: 'ـژ',
+    final: 'ـژ',
+    connectsToNext: false,
   },
 ];
 
